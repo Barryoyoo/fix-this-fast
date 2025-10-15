@@ -11,7 +11,7 @@ Your mission is to:
 
 - 🔄 Fork this repository (recommended for teams)
 - 💻 Clone your fork to your laptop
-- 🎨 Choose your preferred programming language (Python, Java, JavaScript, or C#)
+- 🎨 Choose your preferred programming language (Python, or JavaScript)
 - 🐛 Find and fix bugs in the code
 - ✅ Run the corrected program successfully
 - 📦 Make a commit with your fix
@@ -24,9 +24,7 @@ Your mission is to:
 Inside this repo, you'll find broken calculator implementations in multiple languages:
 
 - 🐍 Python: `python/broken_calculator.py`
-- ☕ Java: `Java/BrokenCalculator.java`
-- 💻 JavaScript: `Javascript/broken_calculator.js`
-- 🔷 C#: `Csharp/BrokenCalculator.cs`
+- 💻 JavaScript: `Javascript/form.html`
 
 Each implementation contains similar types of bugs for you to fix, including:
 - Syntax errors
@@ -55,7 +53,7 @@ cd fix-this-fast
 ### 🌿 Create Your Solution Branch
 1. Create a new branch for your solution:
 ```bash
-git checkout -b fix/LANGUAGE-NAME-solution  # Example: fix/python-solution
+git checkout -b fix/TEAM-NAME-LANGUAGE-NAME-solution  # Example: fix/Team-1-python-solution
 ```
 2. This creates a separate branch for your work, keeping the main branch clean
 3. You can create multiple branches for different language solutions
@@ -68,23 +66,10 @@ cd python
 python -m unittest test_calculator.py
 ```
 
-#### Java
-```bash
-cd Java
-javac BrokenCalculator.java
-java BrokenCalculator
-```
-
 #### JavaScript
 ```bash
 cd Javascript
 node broken_calculator.js
-```
-
-#### C#
-```bash
-cd Csharp
-dotnet run BrokenCalculator.cs
 ```
 
 ### ✅ Commit Your Fix
@@ -105,7 +90,7 @@ git push origin fix/LANGUAGE-NAME-solution
 2. Go to your fork on GitHub
 3. Click the "Compare & pull request" button that appears
 4. Set up the pull request:
-   - base repository: `Debug-Jeff/fix-this-fast`
+   - base repository: `Cyberene/fix-this-fast.git`
    - base: `main`
    - head repository: `YOUR-USERNAME/fix-this-fast`
    - compare: `fix/LANGUAGE-NAME-solution`

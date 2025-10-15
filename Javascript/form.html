@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS-Debug</h1>
+    <!-- --------------------- JS DEBUG OBJECTIVE --------------------------
+
+        This JavaScript program should collect the user’s Name,
+        Age, and Address from the form inputs and display a personalized
+        message below the form when the user submits WITHOUT spaces.
+
+        If any field is left empty, an error message should appear in red.
+        If all fields are filled, a success message should appear in green.
+
+    ----------------------------------------------------------------------- -->
+    <form id="form-field" style="width: 300px;display: flex; flex-direction: column; gap: 10px;">
+        <input style="padding: 5px 10px;" type="text" id="name-input" placeholder="Enter Your Name" />
+        <input style="padding: 5px 10px;" type="text" placeholder="Enter Your Age">
+        <input style="padding: 5px 10px;" type="text" placeholder="Enter Your Address">
+        <button style="padding: 5px 10px;" type="submit">Submit</button>
+    </form>
+    <p id="message"></p>
+    <script>
+        const formField = document.getElementById('formfield');
+        formField.addEventListener('click', (event) => {
+            event.preventDefault();
+            const nameInput = document.getElementById('name-input');
+            const ageInput = document.getElementById('age-input');
+            const addressInput = document.getElementById('address-input');
+            const message = document.getElementById('message');
+
+            if (nameInput === '' && ageInput.value === '' && addressInput.value === '') {
+                message.textContent = 'Enter Your Name, Age and Address';
+                message.style.color = 'red';
+            } else {
+                message.textContent = `Hello, ${nameInput}! Your age is ${ageInput.value} and you live at ${addressInput}.`;
+                message.style.color = 'green';
+            }
+
+        }); 
+    </script>
+</body>
+</html
